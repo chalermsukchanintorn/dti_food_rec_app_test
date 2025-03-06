@@ -10,6 +10,24 @@ class FoodAddUI extends StatefulWidget {
 class _FoodAddUIState extends State<FoodAddUI> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.pinkAccent,
+        title: Text(
+          'เพิ่มข้อมูลการกิน',
+          style: TextStyle(color: Colors.white),
+        ),
+        centerTitle: true,
+        leading: InkWell(
+          onTap: () {
+            Navigator.pop(context);
+          },
+          child: Icon(
+            Icons.arrow_back_ios_new,
+            color: Colors.white,
+          ),
+        ),
+      ),
+    );
   }
 }
