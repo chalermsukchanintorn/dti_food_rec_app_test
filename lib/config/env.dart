@@ -1,3 +1,1 @@
-class Env{
-  static const String baseUrl = 'http://localhost:3030';
-}
+const String baseUrl = 'http://10.1.1.70:3030';

@@ -1,22 +1,18 @@
 class User {
-  String userId;
-  String userFullname;
-  String userName;
-  String userPassword;
-  String userImage;
-  String userEmail;
-  String userCreateDate;
-  String userUpdateDate;
+  String? userId;
+  String? userFullname;
+  String? userName;
+  String? userPassword;
+  String? userImage;
+  String? userEmail;
 
   User({
-    required this.userId,
-    required this.userFullname,
-    required this.userName,
-    required this.userPassword,
-    required this.userImage,
-    required this.userEmail,
-    required this.userCreateDate,
-    required this.userUpdateDate,
+    this.userId,
+    this.userFullname,
+    this.userName,
+    this.userPassword,
+    this.userImage,
+    this.userEmail,
   });
 
   factory User.fromJson(Map<String, dynamic> json) {
@@ -27,8 +23,6 @@ class User {
       userPassword: json['userPassword'],
       userImage: json['userImage'],
       userEmail: json['userEmail'],
-      userCreateDate: json['userCreateDate'],
-      userUpdateDate: json['userUpdateDate'],
     );
   }
 
@@ -40,8 +34,6 @@ class User {
       'userPassword': userPassword,
       'userImage': userImage,
       'userEmail': userEmail,
-      'userCreateDate': userCreateDate,
-      'userUpdateDate': userUpdateDate,
     };
   }
 }
